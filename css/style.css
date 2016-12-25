@@ -5,3 +5,156 @@ body {
   line-height: 24px;
   color: #283136;
 }
+
+.page-header {
+  padding-top: 49px;
+  padding-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: #eeeeee;
+}
+
+.page-header__inner {
+  display: flex;
+  align-items: center;
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.logo {
+  height: 65px;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__img {
+  width: 160px;
+  height: 65px;
+
+  vertical-align: middle;
+}
+
+.main-nav {
+  flex-grow: 1;
+  margin-top: 15px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-nav__item {
+  margin-right: 47px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__link {
+  position: relative;
+
+  display: block;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav__link:hover {
+  color: #fb565a;
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.main-nav__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #fb565a;
+}
+
+.user-block {
+  display: flex;
+  flex-basis: 160px;
+  margin-top: 15px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.user-block__link {
+  position: relative;
+
+  margin-left: auto;
+  padding-left: 40px;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-block__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart.png");
+  transform: translateY(-50%);
+  opacity: .3;
+}
+
+.user-block__link:hover {
+  color: #fb565a;
+}
+
+.user-block__link:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.user-block__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #fb565a;
+}
