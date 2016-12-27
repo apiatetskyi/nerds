@@ -30,6 +30,14 @@ body {
   padding-left: 20px;
 }
 
+.page-wrapper {
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .logo {
   height: 65px;
 }
@@ -161,8 +169,6 @@ body {
 }
 
 .slider {
-  margin-bottom: 80px;
-
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -308,4 +314,73 @@ body {
   color: #e37376;
 
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1);
+}
+
+.btn--services {
+  padding: 16px 39px;
+}
+
+.btn--apps {
+  background-color: #00ca74;
+}
+
+.btn--apps:hover {
+  background-color: #00bc6c;
+}
+
+.btn--apps:active {
+  color: #4dc491;
+
+  background-color: #00aa62;
+}
+
+.btn--presentations {
+  background-color: #efc84a;
+}
+
+.btn--presentations:hover {
+  background-color: #eab534;
+}
+
+.btn--presentations:active {
+  color: #edc265;
+
+  background-color: #e5a722;
+}
+
+.our-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 0;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.our-services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 360px;
+}
+
+.our-services__img {
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
+}
+
+.our-services__name {
+  margin-bottom: 16px;
+  margin-left: -1px;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.our-services__descr {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 32px;
 }
