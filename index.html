@@ -5,6 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,52 +28,51 @@
     </div>
   </header>
   <div class="slider">
-    <div class="slider__inner">
-      <div class="slider__item  slider__item--perfect">
+    <div class="slider__item">
+      <div class="slider__inner  slider__inner--perfect">
         <div class="slider__promo">
           <div class="slider__promo-title">Долго, дорого, скрупулезно.</div>
           <p class="slider__promo-descr">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
           <a class="btn" href="#">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__item  slider__item--math">
+    </div>
+    <div class="slider__item">
+      <div class="slider__inner  slider__inner--math">
         <div class="slider__promo">
           <div class="slider__promo-title">Любим математику как никто другой</div>
-          <p class="slider__promo-descr">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <p class="slider__promo-descr">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
           <a class="btn" href="#">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__item  slider__item--night">
+    </div>
+    <div class="slider__item">
+      <div class="slider__inner  slider__inner--night">
         <div class="slider__promo">
           <div class="slider__promo-title">Только ночь, только хардкор</div>
-          <p class="slider__promo-descr">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <p class="slider__promo-descr">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
           <a class="btn" href="#">Узнать больше</a>
         </div>
       </div>
-      <ul class="slider__paginator">
-        <li class="slider__indicator  slider__indicator--active">1</li>
-        <li class="slider__indicator">2</li>
-        <li class="slider__indicator">3</li>
-      </ul>
     </div>
   </div>
   <div class="page-wrapper">
     <main>
       <section class="our-services">
-        <div class="our-services__item service">
+        <div class="our-services__item">
           <img class="service__img" src="img/service-1.jpg" alt="Веб-сайты">
           <b class="service__name">Веб-сайты</b>
           <p class="service__descr">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn  btn--sites" href="#">Заказать</a>
         </div>
-        <div class="our-services__item service">
-          <img class="service__img" src="img/service-2" alt="Приложения">
+        <div class="our-services__item">
+        <img class="service__img" src="img/service-2.jpg" alt="Приложения">
           <b class="service__name">Приложения</b>
           <p class="service__descr">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn  btn--apps" href="#">Заказать</a>
         </div>
-        <div class="our-services__item service">
-          <img class="service__img" src="img/service-3" alt="Презентации">
+        <div class="our-services__item">
+        <img class="service__img" src="img/service-3.jpg" alt="Презентации">
           <b class="service__name">Презентации</b>
           <p class="service__descr">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn  btn--presentations" href="#">Заказать</a>
@@ -141,5 +141,8 @@
       <p class="page-footer__promo-descr">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
