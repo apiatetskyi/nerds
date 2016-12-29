@@ -304,6 +304,7 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   background-color: #fb565a;
   border-radius: 3px;
@@ -318,6 +319,11 @@
   color: #e37376;
 
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1);
+}
+
+.btn--fluid {
+  display: block;
+  padding: 16px 0;
 }
 
 .btn--size_s {
@@ -574,4 +580,48 @@
 
 .portfolio__img:active {
   opacity: .1;
+}
+
+.map {
+  position: relative;
+}
+
+.map__google {
+  height: 416px;
+}
+
+.map__contacts {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  width: 220px;
+  padding: 47px 50px;
+
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.contacts__title {
+  display: block;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__adress {
+  display: block;
+  margin-bottom: 17px;
+
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts__phone {
+  display: block;
+  margin-bottom: 36px;
+
+  line-height: 18px;
+  color: #666666;
 }
