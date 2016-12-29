@@ -226,7 +226,6 @@ body {
   margin-bottom: 40px;
 }
 
-
 .slider__dots {
   position: absolute;
   bottom: 96px;
@@ -316,7 +315,6 @@ body {
 
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1);
 }
-
 
 .btn--size_s {
   padding: 16px 39px;
@@ -506,4 +504,70 @@ body {
 
 .about-us__stats-descr {
   line-height: 18px;
+}
+
+.portfolio {
+  padding-top: 46px;
+  padding-bottom: 44px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.portfolio__item {
+  position: relative;
+
+  flex: 0 1 260px;
+
+  text-align: center;
+}
+
+.portfolio__item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -7.692%;
+
+  width: 2px;
+  height: 52px;
+  margin-top: -26px;
+
+  background-color: #eeeeee;
+}
+
+.portfolio__item:last-child::after {
+  display: none;
+}
+
+.portfolio__link {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+.portfolio__img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  opacity: .2;
+
+  transition: opacity .3s;
+}
+
+.portfolio__img:hover {
+  opacity: 1;
+}
+
+.portfolio__img:active {
+  opacity: .1;
 }
