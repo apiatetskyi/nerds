@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page  page--catalog">
+  <header class="main-header">
+    <div class="main-header__inner">
+      <div class="logo">
+        <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo.png" alt="Нёрдс" width="160" height="65"></a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="#">Магазин</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#map">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="user-block__link" href="#">Корзина</a>
+      </div>
+    </div>
+  </header>
+  <h1 class="page__heading">Магазин готовых шаблонов</h1>
+  <div class="page__wrapper">
+    <main class="page__main">
+    </main>
+  </div>
+  <div class="map">
+    <div class="page__wrapper">
+      <div class="map__contacts  contacts">
+        <b class="contacts__title">NЁRDS DESIGN STUDIO</b>
+        <span class="contacts__adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</span>
+        <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
+        <a class="btn  btn--fluid" href="#">Напишите нам</a>
+      </div>
+    </div>
+    <div class="map__google" id="map"></div>
+  </div>
+  <div class="main-footer">
+    <div class="main-footer__wrapper page__wrapper">
+      <ul class="social-btns">
+        <li class="social-btns__item"><a class="social-btns__link  social-btns__link--vk" href="#">vk</a></li>
+        <li class="social-btns__item"><a class="social-btns__link  social-btns__link--fb" href="#">fb</a></li>
+        <li class="social-btns__item"><a class="social-btns__link  social-btns__link--insta" href="#">insta</a></li>
+      </ul>
+      <div class="main-footer__promo">
+        <div class="main-footer__promo-title">Давайте дружить, это выгодно!</div>
+        <p class="main-footer__promo-descr">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&signed_in=true&callback=initMap"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

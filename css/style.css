@@ -17,7 +17,24 @@
 }
 
 .page__main {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+.page__heading {
+  margin: 0;
+  padding-top: 85px;
+  padding-bottom: 117px;
+
+  font-size: 55px;
+  line-height: 60px;
+  color: #000000;
+  text-align: center;
+
+  background: #eeeeee;
+}
+
+.page--catalog .page__main {
+  padding-bottom: 60px;
 }
 
 .main-header {
