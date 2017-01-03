@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.slider').slick({
+  $(".slider").slick({
     autoplay: true,
     arrows: false,
     dotsClass: "slider__dots",
@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById("map"), {
     center: {lat: 59.939132, lng: 30.321471},
     zoom: 17,
     scaleControl: true,
@@ -18,10 +18,42 @@ function initMap() {
     mapTypeControl: false
   });
 
-  var image = 'img/map-marker.png';
+  var image = "img/map-marker.png";
   var nerdsMarker = new google.maps.Marker({
     position: {lat: 59.938752, lng: 30.323789},
     map: map,
     icon: image
   });
 }
+
+// noUiSlider
+var priceRange = document.getElementById("price-range");
+var minPrice = document.getElementById("min-price");
+var maxPrice = document.getElementById("max-price");
+
+noUiSlider.create(priceRange, {
+  start: [0, 15000],
+  connect: true,
+  range: {
+    "min": 0,
+    "max": 22000
+  }
+});
+
+// Updating input value on slider handle
+priceRange.noUiSlider.on("update", function ( values, handle ) {
+  if ( handle == 0 ) {
+    minPrice.value = parseInt(values[handle], 10);
+  } else if ( handle == 1 ) {
+    maxPrice.value = parseInt(values[handle], 10);
+  }
+});
+
+// Updating handle position on input value changing
+minPrice.addEventListener("change", function ( ) {
+  priceRange.noUiSlider.set([this.value, null]);
+});
+
+maxPrice.addEventListener("change", function ( ) {
+  priceRange.noUiSlider.set([null, this.value]);
+});

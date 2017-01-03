@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" href="nouislider/nouislider.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page  page--catalog">
@@ -30,6 +31,24 @@
   <h1 class="page__heading">Магазин готовых шаблонов</h1>
   <div class="page__wrapper">
     <main class="page__main">
+      <form class="filter-form" action="#" method="POST">
+        <fieldset class="filter__fieldset">
+        <legend class="filter__legend  filter__legend--cost">Стоимость:</legend>
+          <div class="price-filter">
+            <div class="price-filter__range" id="price-range"></div>
+            <div class="price-filter__value">
+              <label class="price-filter__label" for="min-price">от</label>
+              <input class="price-filter__input" id="min-price" type="text">
+            </div>
+            <div class="price-filter__value">
+              <label class="price-filter__label" for="max-price">до</label>
+              <input class="price-filter__input" id="max-price" type="text">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter__fieldset"></fieldset>
+        <fieldset class="filter__fieldset"></fieldset>
+      </form>
     </main>
   </div>
   <div class="map">
@@ -58,6 +77,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="nouislider/nouislider.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&signed_in=true&callback=initMap"></script>
   <script src="js/app.js"></script>
 </body>
