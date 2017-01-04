@@ -31,23 +31,24 @@ var priceRange = document.getElementById("price-range");
 var minPrice = document.getElementById("min-price");
 var maxPrice = document.getElementById("max-price");
 
-noUiSlider.create(priceRange, {
-  start: [0, 15000],
-  connect: true,
-  range: {
-    "min": 0,
-    "max": 22000
-  }
-});
+if (priceRange) {
+  noUiSlider.create(priceRange, {
+    start: [0, 15000],
+    connect: true,
+    range: {
+      "min": 0,
+      "max": 22000
+    }
+  });
 
-// Updating input value on slider handle
-priceRange.noUiSlider.on("update", function ( values, handle ) {
-  if ( handle == 0 ) {
-    minPrice.value = parseInt(values[handle], 10);
-  } else if ( handle == 1 ) {
-    maxPrice.value = parseInt(values[handle], 10);
-  }
-});
+  // Updating input value on slider handle
+  priceRange.noUiSlider.on("update", function ( values, handle ) {
+    if ( handle == 0 ) {
+      minPrice.value = parseInt(values[handle], 10);
+    } else if ( handle == 1 ) {
+      maxPrice.value = parseInt(values[handle], 10);
+    }
+  });
 
 // Updating handle position on input value changing
 minPrice.addEventListener("change", function ( ) {
@@ -56,4 +57,24 @@ minPrice.addEventListener("change", function ( ) {
 
 maxPrice.addEventListener("change", function ( ) {
   priceRange.noUiSlider.set([null, this.value]);
+});
+
+}
+
+
+
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
 });
