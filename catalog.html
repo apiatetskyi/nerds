@@ -33,7 +33,7 @@
     <main class="page__main">
       <form class="filter-form" action="#" method="POST">
         <fieldset class="filter-form__fieldset  filter-form__fieldset--cost">
-        <legend class="filter-form__legend  filter-form__legend--cost">Стоимость:</legend>
+          <legend class="filter-form__legend  filter-form__legend--cost">Стоимость:</legend>
           <div class="price-filter">
             <div class="price-filter-form__range" id="price-range"></div>
             <div class="price-filter-form__value">
@@ -86,6 +86,22 @@
         </fieldset>
         <button class="filter-form__submit" type="submit">Показать</button>
       </form>
+      <section class="catalog">
+        <div class="sort">
+          <span class="sort__title">Сортировать:</span>
+          <div class="sort__controls">
+            <ul class="sort__list">
+              <li class="sort__type"><a class="sort__link  sort__link--active" href="#">По цене</a></li>
+              <li class="sort__type"><a class="sort__link" href="#">По типу</a></li>
+              <li class="sort__type"><a class="sort__link" href="#">По названию</a></li>
+            </ul>
+            <div class="sort__btns">
+              <a class="sort__arrow  sort__arrow--down  sort__arrow--active" href="#"></a>
+              <a class="sort__arrow  sort__arrow--up" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
   <div class="map">

@@ -36,6 +36,7 @@
 
 .page--catalog .page__main {
   display: flex;
+  justify-content: space-between;
   padding-top: 55px;
   padding-bottom: 60px;
 }
@@ -1025,4 +1026,104 @@
 .checkbox-row__checkbox:disabled ~ .checkbox-row__label::before {
   cursor: default;
   opacity: .1;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort__title {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.sort__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 49px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.sort__type {
+  margin-right: 26px;
+}
+
+.sort__type:last-child {
+  margin-right: 0;
+}
+
+.sort__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  opacity: .3;
+}
+
+.sort__link:hover {
+  opacity: .6;
+}
+
+.sort__link--active,
+.sort__link--active:hover {
+  opacity: 1;
+}
+
+.sort__btns {
+  display: flex;
+  align-items: center;
+
+  -ms-align-items: center;
+}
+
+.sort__arrow {
+  border: 9px solid #000000;
+  border-right-width: 4px;
+  border-right-color: transparent;
+  border-left-width: 4px;
+  border-left-color: transparent;
+  opacity: .2;
+}
+
+.sort__arrow:hover {
+  opacity: .6;
+}
+
+.sort__arrow--down {
+  margin-right: 20px;
+
+  border-bottom: 0;
+}
+
+.sort__arrow--up {
+  border-top: 0;
+}
+
+.sort__arrow--active,
+.sort__arrow--active:hover {
+  opacity: 1;
 }
