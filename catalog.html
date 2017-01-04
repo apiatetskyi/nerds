@@ -32,22 +32,59 @@
   <div class="page__wrapper">
     <main class="page__main">
       <form class="filter-form" action="#" method="POST">
-        <fieldset class="filter__fieldset">
-        <legend class="filter__legend  filter__legend--cost">Стоимость:</legend>
+        <fieldset class="filter-form__fieldset  filter-form__fieldset--cost">
+        <legend class="filter-form__legend  filter-form__legend--cost">Стоимость:</legend>
           <div class="price-filter">
-            <div class="price-filter__range" id="price-range"></div>
-            <div class="price-filter__value">
-              <label class="price-filter__label" for="min-price">от</label>
-              <input class="price-filter__input" id="min-price" type="text">
+            <div class="price-filter-form__range" id="price-range"></div>
+            <div class="price-filter-form__value">
+              <label class="price-filter-form__label" for="min-price">от</label>
+              <input class="price-filter-form__input" id="min-price" type="text">
             </div>
-            <div class="price-filter__value">
-              <label class="price-filter__label" for="max-price">до</label>
-              <input class="price-filter__input" id="max-price" type="text">
+            <div class="price-filter-form__value">
+              <label class="price-filter-form__label" for="max-price">до</label>
+              <input class="price-filter-form__input" id="max-price" type="text">
             </div>
           </div>
         </fieldset>
-        <fieldset class="filter__fieldset"></fieldset>
-        <fieldset class="filter__fieldset"></fieldset>
+        <fieldset class="filter-form__fieldset  filter-form__fieldset--layout">
+          <legend class="filter-form__legend  filter-form__legend--layout">Сетка:</legend>
+          <div class="filter-form__radio-row  radio-row">
+            <input class="radio-row__radio" id="adaptive-layout" type="radio" name="layout-type" value="adaptive" checked>
+            <label class="radio-row__label" for="adaptive-layout">Адаптивная</label>
+          </div>
+          <div class="filter-form__radio-row  radio-row">
+            <input class="radio-row__radio" id="fixed-layout" type="radio" name="layout-type" value="fixed">
+            <label class="radio-row__label" for="fixed-layout">Фиксированная</label>
+          </div>
+          <div class="filter-form__radio-row  radio-row">
+            <input class="radio-row__radio" id="responsive-layout" type="radio" name="layout-type" value="responsive">
+            <label class="radio-row__label" for="responsive-layout">Резиновая</label>
+          </div>
+        </fieldset>
+        <fieldset class="filter-form__fieldset  filter-form__fieldset--features">
+          <legend class="filter-form__legend  filter-form__legend--features">Особенности:</legend>
+          <div class="filter-form__checkbox-row  checkbox-row">
+            <input class="checkbox-row__checkbox" id="slider-block" type="checkbox" name="with-slider" checked>
+            <label class="checkbox-row__label" for="slider-block">Слайдер</label>
+          </div>
+          <div class="filter-form__checkbox-row  checkbox-row">
+            <input class="checkbox-row__checkbox" id="features-block" type="checkbox" name="with-features">
+            <label class="checkbox-row__label" for="features-block">Блок преимуществ</label>
+          </div>
+          <div class="filter-form__checkbox-row  checkbox-row">
+            <input class="checkbox-row__checkbox" id="news-block" type="checkbox" name="with-news" checked>
+            <label class="checkbox-row__label" for="news-block">Новости</label>
+          </div>
+          <div class="filter-form__checkbox-row  checkbox-row">
+            <input class="checkbox-row__checkbox" id="gallery-block" type="checkbox" name="with-gallery">
+            <label class="checkbox-row__label" for="gallery-block">Галерея</label>
+          </div>
+          <div class="filter-form__checkbox-row  checkbox-row">
+            <input class="checkbox-row__checkbox" id="cart-block" type="checkbox" name="with-cart">
+            <label class="checkbox-row__label" for="cart-block">Корзина</label>
+          </div>
+        </fieldset>
+        <button class="filter-form__submit" type="submit">Показать</button>
       </form>
     </main>
   </div>
