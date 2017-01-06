@@ -1,3 +1,4 @@
+"use strict";
 $(document).ready(function(){
   $(".slider").slick({
     autoplay: true,
@@ -50,20 +51,17 @@ if (priceRange) {
     }
   });
 
-// Updating handle position on input value changing
-minPrice.addEventListener("change", function ( ) {
-  priceRange.noUiSlider.set([this.value, null]);
-});
+  // Updating handle position on input value changing
+  minPrice.addEventListener("change", function ( ) {
+    priceRange.noUiSlider.set([this.value, null]);
+  });
 
-maxPrice.addEventListener("change", function ( ) {
-  priceRange.noUiSlider.set([null, this.value]);
-});
-
+  maxPrice.addEventListener("change", function ( ) {
+    priceRange.noUiSlider.set([null, this.value]);
+  });
 }
 
-
-
-
+// Smooth scrolling
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -78,3 +76,37 @@ $(function() {
     }
   });
 });
+
+// Validation
+function validateInput() {
+  if (this.value) {
+    this.classList.remove("feedback__input--js_invalid");
+    this.classList.add("feedback__input--js_valid")
+  } else {
+    this.classList.remove("feedback__input--js_valid");
+    this.classList.add("feedback__input--js_invalid");
+  }
+}
+
+var inputsList = $("input[type='text'], input[type='email'], textarea");
+
+if (inputsList) {
+  inputsList.each(function (i, el){
+    el.addEventListener("blur", validateInput);
+  });
+}
+
+
+
+
+
+// var feedbackSubmit = document.querySelector(".feedback__submit");
+
+// feedbackSubmit.addEventListener("click", function(e){
+//   inputsList.forEach(function (item){
+//     if (!item.value) {
+//       e.preventDefault();
+//       item.classList.add("feedback__input--js_invalid");
+//     }
+//   });
+// })

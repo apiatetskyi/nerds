@@ -142,6 +142,22 @@
       </div>
     </div>
   </div>
+  <form class="feedback" action="#" method="POST">
+    <h2 class="feedback__title">Напишите нам</h2>
+    <div class="feedback__box">
+      <label class="feedback__label">Ваше имя:</label>
+      <input class="feedback__input" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
+    </div>
+    <div class="feedback__box">
+      <label class="feedback__label">Ваш e-mail:</label>
+      <input class="feedback__input" type="email" name="user-mail" placeholder="Для отправки ответа" required>
+    </div>
+    <div class="feedback__box  feedback__box--fluid">
+      <label class="feedback__label">Текст письма:</label>
+      <textarea class="feedback__input  feedback__textarea" name="user-letter" placeholder="В свободной форме" required></textarea>
+    </div>
+    <button class="feedback__submit  btn  btn--size_l" type="submit">Отправить</button>
+  </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&signed_in=true&callback=initMap"></script>
