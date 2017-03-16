@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="nouislider/nouislider.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page  page--catalog">
   <header class="main-header">
@@ -104,54 +104,54 @@
         <div class="catalog__cards">
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-sedona.jpg" alt="">
+            <img class="product-card__img" src="img/card-sedona.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">Sedona</span>
+              <h2 class="product-card__name">Sedona</h2>
               <span class="product-card__descr">Информационный сайт для туристов</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-pink.jpg" alt="">
+            <img class="product-card__img" src="img/card-pink.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">Pink App</span>
+              <h2 class="product-card__name">Pink App</h2>
               <span class="product-card__descr">Продуктовый лендинг приложения для iOS и Android</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-barbershop.jpg" alt="">
+            <img class="product-card__img" src="img/card-barbershop.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">Barbershop</span>
+              <h2 class="product-card__name">Barbershop</h2>
               <span class="product-card__descr">Сайт салоны красоты. Для мужчин, да.</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-mishka.jpg" alt="">
+            <img class="product-card__img" src="img/card-mishka.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">MISHKA</span>
+              <h2 class="product-card__name">MISHKA</h2>
               <span class="product-card__descr">Интернет-магазин вязаных игрушек</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-aplus.jpg" alt="">
+            <img class="product-card__img" src="img/card-aplus.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">A Plus</span>
+              <h2 class="product-card__name">A Plus</h2>
               <span class="product-card__descr">Лендинг курсов повышения квалификации</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog__card  product-card">
             <div class="product-card__top-line"></div>
-            <img class="product-card__img" src="img/card-kvast.jpg" alt="">
+            <img class="product-card__img" src="img/card-kvast.jpg" alt="" width="360" height="576">
             <div class="product-card__info">
-              <span class="product-card__name">Кваст</span>
+              <h2 class="product-card__name">Кваст</h2>
               <span class="product-card__descr">Промо-сайт производителя крафтового кваса</span>
               <a class="btn" href="">9 900 руб.</a>
             </div>
@@ -159,7 +159,7 @@
         </div>
         <ul class="paginator">
           <li class="paginator__btn  paginator__btn--disabled"><a class="paginator__link  paginator__link--prev" href="#">Предыдущая</a></li>
-          <li class="paginator__btn"><a class="paginator__link  paginator__link--active" href="#">1</a></li>
+          <li class="paginator__btn  paginator__btn--active"><a class="paginator__link">1</a></li>
           <li class="paginator__btn"><a class="paginator__link" href="#">2</a></li>
           <li class="paginator__btn"><a class="paginator__link" href="#">3</a></li>
           <li class="paginator__btn"><a class="paginator__link  paginator__link--next" href="#">Следующая</a></li>
@@ -173,7 +173,7 @@
         <b class="contacts__title">NЁRDS DESIGN STUDIO</b>
         <span class="contacts__adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</span>
         <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
-        <a class="btn  btn--fluid" href="#">Напишите нам</a>
+        <a class="map__btn  btn  btn--fluid" href="#">Напишите нам</a>
       </div>
     </div>
     <div class="map__google" id="map"></div>
@@ -191,6 +191,23 @@
       </div>
     </div>
   </div>
+  <form class="feedback" action="#" method="POST">
+    <button class="feedback__close" type="button">Закрыть</button>
+    <h2 class="feedback__title">Напишите нам</h2>
+    <div class="feedback__box">
+      <label class="feedback__label">Ваше имя:</label>
+      <input class="feedback__input" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+    </div>
+    <div class="feedback__box">
+      <label class="feedback__label">Ваш e-mail:</label>
+      <input class="feedback__input" type="email" name="user-mail" placeholder="Для отправки ответа">
+    </div>
+    <div class="feedback__box  feedback__box--fluid">
+      <label class="feedback__label">Текст письма:</label>
+      <textarea class="feedback__input  feedback__textarea" name="user-letter" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="feedback__submit  btn  btn--size_l" type="submit">Отправить</button>
+  </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="nouislider/nouislider.min.js"></script>

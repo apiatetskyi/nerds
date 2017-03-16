@@ -6,13 +6,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <header class="main-header">
     <div class="main-header__inner">
-      <div class="logo">
-        <a class="logo__link" ><img class="logo__img" src="img/logo.png" alt="Нёрдс" width="160" height="65"></a>
+      <div class="logo  logo--disabled">
+        <a class="logo__link"><img class="logo__img" src="img/logo.png" alt="Нёрдс" width="160" height="65"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -79,9 +79,9 @@
         </div>
       </section>
       <section class="about-us">
-        <div class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </div>
+        <h2 class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p class="about-us__descr">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <img class="about-us__img" src="img/logo-holiday.jpg" alt="Нёрдс">
+        <img class="about-us__img" src="img/logo-holiday.jpg" alt="Нёрдс" width="360" height="208">
         <div class="about-us__services">
           <b class="about-us__sub-title">Выполняем заказы на разработку:</b>
           <ul class="about-us__list">
@@ -110,10 +110,10 @@
       </section>
       <section class="portfolio" id="clients">
         <ul class="portfolio__list">
-          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-htmlacademy.png" alt="HTML Academy"></a></li>
-          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-borodinski.png" alt="Barbershop Borodinski"></a></li>
-          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-pink.png" alt="Pink"></a></li>
-          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-mishka.png" alt="Mishka"></a></li>
+          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-htmlacademy.png" alt="HTML Academy" width="199" height="68"></a></li>
+          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-borodinski.png" alt="Barbershop Borodinski" width="209" height="90"></a></li>
+          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-pink.png" alt="Pink" width="185" height="52"></a></li>
+          <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/logo-mishka.png" alt="Mishka" width="173" height="84"></a></li>
         </ul>
       </section>
     </main>
@@ -124,7 +124,7 @@
         <b class="contacts__title">NЁRDS DESIGN STUDIO</b>
         <span class="contacts__adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</span>
         <span class="contacts__phone">тел. +7 (812) 275-75-75</span>
-        <a class="btn  btn--fluid" href="#">Напишите нам</a>
+        <a class="map__btn  btn  btn--fluid" href="#">Напишите нам</a>
       </div>
     </div>
     <div class="map__google" id="map"></div>
@@ -143,24 +143,25 @@
     </div>
   </div>
   <form class="feedback" action="#" method="POST">
+    <button class="feedback__close" type="button">Закрыть</button>
     <h2 class="feedback__title">Напишите нам</h2>
     <div class="feedback__box">
       <label class="feedback__label">Ваше имя:</label>
-      <input class="feedback__input" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
+      <input class="feedback__input" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
     </div>
     <div class="feedback__box">
       <label class="feedback__label">Ваш e-mail:</label>
-      <input class="feedback__input" type="email" name="user-mail" placeholder="Для отправки ответа" required>
+      <input class="feedback__input" type="email" name="user-mail" placeholder="Для отправки ответа">
     </div>
     <div class="feedback__box  feedback__box--fluid">
       <label class="feedback__label">Текст письма:</label>
-      <textarea class="feedback__input  feedback__textarea" name="user-letter" placeholder="В свободной форме" required></textarea>
+      <textarea class="feedback__input  feedback__textarea" name="user-letter" placeholder="В свободной форме"></textarea>
     </div>
     <button class="feedback__submit  btn  btn--size_l" type="submit">Отправить</button>
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&signed_in=true&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&amp;signed_in=true&amp;callback=initMap"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
